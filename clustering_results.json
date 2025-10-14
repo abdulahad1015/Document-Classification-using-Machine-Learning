@@ -1,0 +1,150 @@
+{
+  "method": "kmeans",
+  "n_clusters": 2,
+  "clusters": {
+    "Cluster_1": {
+      "document_count": 2,
+      "common_fields": [
+        "Program",
+        "Student ID"
+      ],
+      "all_unique_fields": [
+        "National ID",
+        "Campus",
+        "Valid Till",
+        "University Name",
+        "Name",
+        "Student ID",
+        "Program",
+        "CNIC",
+        "Student Name"
+      ],
+      "documents": [
+        {
+          "file_name": "img1.jpg",
+          "file_path": "images/img1.jpg",
+          "document_type": "Identification Document",
+          "field_names": [
+            "Name",
+            "Student ID",
+            "Program",
+            "CNIC",
+            "Valid Till"
+          ],
+          "extracted_data": {
+            "Name": "Abdul Ahad",
+            "Student ID": "22K-4353",
+            "Program": "BS(CS)",
+            "CNIC": "42101-1876360-1",
+            "Valid Till": "30-June-2026"
+          }
+        },
+        {
+          "file_name": "img3.jpg",
+          "file_path": "images/img3.jpg",
+          "document_type": "Student ID Card",
+          "field_names": [
+            "University Name",
+            "Campus",
+            "Student Name",
+            "Student ID",
+            "Program",
+            "National ID"
+          ],
+          "extracted_data": {
+            "University Name": "National University of Computer and Emerging Sciences",
+            "Campus": "Karachi Campus",
+            "Student Name": "Muhammad Shayani Khan",
+            "Student ID": "22K-5065",
+            "Program": "BS(Robo)",
+            "National ID": "42501-9187348-4"
+          }
+        }
+      ]
+    },
+    "Cluster_0": {
+      "document_count": 4,
+      "common_fields": [],
+      "all_unique_fields": [
+        "Material",
+        "COURSE",
+        "Document ID",
+        "Number",
+        "Name",
+        "REGISTRATION NUMBER",
+        "id",
+        "degree"
+      ],
+      "documents": [
+        {
+          "file_name": "img2.jpg",
+          "file_path": "images/img2.jpg",
+          "document_type": "unknown",
+          "field_names": [],
+          "extracted_data": {}
+        },
+        {
+          "file_name": "img4.jpg",
+          "file_path": "images/img4.jpg",
+          "document_type": "Unspecified",
+          "field_names": [
+            "degree",
+            "id"
+          ],
+          "extracted_data": {
+            "degree": "BS(CS)",
+            "id": "45305-0448475-5"
+          }
+        },
+        {
+          "file_name": "img5.jpg",
+          "file_path": "images/img5.jpg",
+          "document_type": "Unclear",
+          "field_names": [
+            "Document ID",
+            "Material",
+            "Number",
+            "Name"
+          ],
+          "extracted_data": {
+            "Document ID": "22K-4023",
+            "Material": "BS(Al)",
+            "Number": "42101-7622469-7",
+            "Name": "Zaeem UI Haq"
+          }
+        },
+        {
+          "file_name": "img6.jpg",
+          "file_path": "images/img6.jpg",
+          "document_type": "Unknown",
+          "field_names": [
+            "COURSE",
+            "REGISTRATION NUMBER"
+          ],
+          "extracted_data": {
+            "COURSE": "BS(CS)",
+            "REGISTRATION NUMBER": "42101-8194491-9"
+          }
+        }
+      ]
+    }
+  },
+  "vectorizer_features": [
+    "campus",
+    "cnic",
+    "course",
+    "degree",
+    "document",
+    "id",
+    "material",
+    "name",
+    "national",
+    "number",
+    "program",
+    "registration",
+    "student",
+    "till",
+    "university",
+    "valid"
+  ]
+}
