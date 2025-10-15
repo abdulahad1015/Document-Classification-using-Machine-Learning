@@ -1,0 +1,35 @@
+{
+  "total_documents": 6,
+  "documents": [
+    {
+      "source_file": "images\\id1.jpg",
+      "file_name": "id1.jpg",
+      "extracted_text": "National University\nFS\nof Computer and Emerging Sciences\nKarachi Campus\nAbdulAhad\n22K-4353\nBS(CS)\n42101-1876360-1\nValid till30-June-2026"
+    },
+    {
+      "source_file": "images\\id3.jpg",
+      "file_name": "id3.jpg",
+      "extracted_text": "National University\nFS\nof Computer and Emerging Sciences\nKarachi Campus\nMuhammad ShayanKKan\n22K-5065\nBS(Robo)\n42501-9187348-1\nValid till30-June-2026"
+    },
+    {
+      "source_file": "images\\id4.jpg",
+      "file_name": "id4.jpg",
+      "extracted_text": "National University\nFS\nof Computer and Emerging Sciences\nKarachi Campus\nUzair Ibrahim\n24K-0867\nBS(CS)\n45305-0448475-5\nValid till30-June-2028"
+    },
+    {
+      "source_file": "images\\nic2.jpg",
+      "file_name": "nic2.jpg",
+      "extracted_text": "Under 18 until24.09.2022\n36490\nPAKISTAN\n29.07.2021\nDate of Issue\n42101-9154862-9\nIdentity Number\nM\nGender\nKamal Ahmed Khan\nFather Name\nMusaddiq Kamal Khan\nName\nCountry ofStay\nSaudi Arabia\nNational Identity Card\nDate of Birth\nUGA\n29.07.2031\nDate of Expiry\n24.09.2004\nHolder's Signature\nMusaddiay"
+    },
+    {
+      "source_file": "images\\nic3.jpg",
+      "file_name": "nic3.jpg",
+      "extracted_text": "PAKISTAN\nNational Identity Card\nSLAMIC REPUBLIC OF PAKISTAN\nName\nAbdul Ahad\nFather Name\nDanish\nGender\nCountry ofStay\nM\nUnited States\nIdentity Number\nDate of Birth\n42101-1876360-1\n06.11.2003\nDate of Issue\nDate of Expiry\n13.12.2021\n13.12.2031\nHolder's Signature"
+    },
+    {
+      "source_file": "images\\nic4.jpg",
+      "file_name": "nic4.jpg",
+      "extracted_text": "PAKISTAN National Identity Card\nSLAC REPUSLIC OF PAKISTAN\nName\nMuhammad Taha\nUnder 18 until 12.02.2023\nFather Name\nGhulam Muhammad\nGender Country of Stay\nM\nPakistan\nIdentity Number\nDate of Birth\n42000-7319542-5\n12.02.2005\nDate of issue\nDate of Expiry\n28.02.2022\n28.02.2032\nHolder s Signature"
+    }
+  ]
+}
