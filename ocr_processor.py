@@ -13,14 +13,7 @@ from PIL import Image
 
 class OCRProcessor:
     def __init__(self, use_angle_cls=True, lang='en', use_gpu=False):
-        """
-        Initialize the OCR processor with PaddleOCR.
-        
-        Args:
-            use_angle_cls: Enable angle classification (better for rotated text)
-            lang: Language code ('en', 'ch', 'french', 'german', 'korean', 'japan', etc.)
-            use_gpu: Use GPU acceleration if available
-        """
+
         print("Initializing PaddleOCR...")
         self.ocr = PaddleOCR(
             use_angle_cls=use_angle_cls,
@@ -31,15 +24,7 @@ class OCRProcessor:
         print("PaddleOCR initialized successfully")
     
     def extract_text_from_image(self, image_path: str) -> str:
-        """
-        Extract text from an image using PaddleOCR.
-        
-        Args:
-            image_path: Path to the image file
-            
-        Returns:
-            Extracted text as string
-        """
+
         try:
             # PaddleOCR can work directly with image paths
             result = self.ocr.ocr(image_path, cls=True)
@@ -66,15 +51,7 @@ class OCRProcessor:
             return ""
     
     def process_single_document(self, image_path: str) -> Dict[str, Any]:
-        """
-        Process a single document with OCR.
-        
-        Args:
-            image_path: Path to the document image
-            
-        Returns:
-            Dictionary with OCR results
-        """
+
         print(f"Processing: {image_path}")
         extracted_text = self.extract_text_from_image(image_path)
         
@@ -87,15 +64,7 @@ class OCRProcessor:
         return result
     
     def process_multiple_documents(self, image_paths: List[str]) -> List[Dict[str, Any]]:
-        """
-        Process multiple documents with OCR.
-        
-        Args:
-            image_paths: List of paths to document images
-            
-        Returns:
-            List of OCR results
-        """
+
         results = []
         
         print(f"\nProcessing {len(image_paths)} documents with OCR...")
@@ -135,7 +104,7 @@ if __name__ == "__main__":
     # Initialize PaddleOCR with English language
     # For other languages, use: lang='ch' (Chinese), 'french', 'german', 'korean', 'japan', etc.
     # For GPU support: use_gpu=True
-    processor = OCRProcessor(use_angle_cls=True, lang='en', use_gpu=False)
+    processor = OCRProcessor(use_angle_cls=True, lang='en', use_gpu=True)
     
     if len(sys.argv) > 1:
         if os.path.isdir(sys.argv[1]):
