@@ -1,0 +1,216 @@
+{
+  "method": "kmeans",
+  "n_clusters": 2,
+  "clusters": {
+    "Cluster_0": {
+      "document_count": 4,
+      "common_fields": [],
+      "all_unique_fields": [
+        "Student Name",
+        "Program of Study",
+        "CNIC",
+        "University Name",
+        "Program",
+        "Valid Till Date",
+        "Institution Name",
+        "National ID",
+        "CNIC Number",
+        "Valid Till",
+        "Campus",
+        "Student ID"
+      ],
+      "documents": [
+        {
+          "file_name": "id1.jpg",
+          "file_path": "images\\id1.jpg",
+          "document_type": "Student ID Card",
+          "field_names": [
+            "University Name",
+            "Campus",
+            "Student Name",
+            "Student ID",
+            "Program",
+            "National ID",
+            "Valid Till Date"
+          ],
+          "extracted_data": {
+            "University Name": "National University of Computer and Emerging Sciences",
+            "Campus": "Karachi Campus",
+            "Student Name": "AbdulAhad",
+            "Student ID": "22K-4353",
+            "Program": "BS(CS)",
+            "National ID": "42101-1876360-1",
+            "Valid Till Date": "30-June-2026"
+          }
+        },
+        {
+          "file_name": "id3.jpg",
+          "file_path": "images\\id3.jpg",
+          "document_type": "Student ID Card",
+          "field_names": [
+            "Institution Name",
+            "Campus",
+            "Student Name",
+            "Student ID",
+            "Program of Study",
+            "CNIC Number",
+            "Valid Till Date"
+          ],
+          "extracted_data": {
+            "Institution Name": "National University of Computer and Emerging Sciences",
+            "Campus": "Karachi Campus",
+            "Student Name": "Muhammad ShayanKKan",
+            "Student ID": "22K-5065",
+            "Program of Study": "BS(Robo)",
+            "CNIC Number": "42501-9187348-1",
+            "Valid Till Date": "30-June-2026"
+          }
+        },
+        {
+          "file_name": "id4.jpg",
+          "file_path": "images\\id4.jpg",
+          "document_type": "Student ID Card",
+          "field_names": [
+            "Institution Name",
+            "Campus",
+            "Student Name",
+            "Student ID",
+            "Program",
+            "CNIC",
+            "Valid Till"
+          ],
+          "extracted_data": {
+            "Institution Name": "National University of Computer and Emerging Sciences",
+            "Campus": "Karachi Campus",
+            "Student Name": "Uzair Ibrahim",
+            "Student ID": "24K-0867",
+            "Program": "BS(CS)",
+            "CNIC": "45305-0448475-5",
+            "Valid Till": "30-June-2028"
+          }
+        },
+        {
+          "file_name": "nic2.jpg",
+          "file_path": "images\\nic2.jpg",
+          "document_type": "unknown",
+          "field_names": [],
+          "extracted_data": {}
+        }
+      ]
+    },
+    "Cluster_1": {
+      "document_count": 2,
+      "common_fields": [
+        "Date of Birth",
+        "Name",
+        "Identity Number",
+        "Father Name",
+        "Date of Expiry",
+        "Country of Stay",
+        "Gender"
+      ],
+      "all_unique_fields": [
+        "Date of Birth",
+        "Name",
+        "Holder's Signature",
+        "Under 18 until",
+        "Date of issue",
+        "Father Name",
+        "Date of Issue",
+        "Holder s Signature",
+        "Identity Number",
+        "Date of Expiry",
+        "Country of Stay",
+        "Gender"
+      ],
+      "documents": [
+        {
+          "file_name": "nic3.jpg",
+          "file_path": "images\\nic3.jpg",
+          "document_type": "Identity Card",
+          "field_names": [
+            "Name",
+            "Father Name",
+            "Gender",
+            "Country of Stay",
+            "Identity Number",
+            "Date of Birth",
+            "Date of Issue",
+            "Date of Expiry",
+            "Holder's Signature"
+          ],
+          "extracted_data": {
+            "Name": "Abdul Ahad",
+            "Father Name": "Danish",
+            "Gender": "M",
+            "Country of Stay": "United States",
+            "Identity Number": "42101-1876360-1",
+            "Date of Birth": "06.11.2003",
+            "Date of Issue": "13.12.2021",
+            "Date of Expiry": "13.12.2031",
+            "Holder's Signature": null
+          }
+        },
+        {
+          "file_name": "nic4.jpg",
+          "file_path": "images\\nic4.jpg",
+          "document_type": "National Identity Card",
+          "field_names": [
+            "Name",
+            "Under 18 until",
+            "Father Name",
+            "Gender",
+            "Country of Stay",
+            "Identity Number",
+            "Date of Birth",
+            "Date of issue",
+            "Date of Expiry",
+            "Holder s Signature"
+          ],
+          "extracted_data": {
+            "Name": "Muhammad Taha",
+            "Under 18 until": "12.02.2023",
+            "Father Name": "Ghulam Muhammad",
+            "Gender": "M",
+            "Country of Stay": "Pakistan",
+            "Identity Number": "42000-7319542-5",
+            "Date of Birth": "12.02.2005",
+            "Date of issue": "28.02.2022",
+            "Date of Expiry": "28.02.2032"
+          }
+        }
+      ]
+    }
+  },
+  "vectorizer_features": [
+    "18",
+    "birth",
+    "campus",
+    "cnic",
+    "country",
+    "date",
+    "expiry",
+    "father",
+    "gender",
+    "holder",
+    "id",
+    "identity",
+    "institution",
+    "issue",
+    "name",
+    "national",
+    "number",
+    "of",
+    "program",
+    "s",
+    "signature",
+    "stay",
+    "student",
+    "study",
+    "till",
+    "under",
+    "university",
+    "until",
+    "valid"
+  ]
+}

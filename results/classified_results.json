@@ -1,0 +1,153 @@
+{
+  "total_documents": 6,
+  "documents": [
+    {
+      "source_file": "images\\id1.jpg",
+      "file_name": "id1.jpg",
+      "extracted_text": "National University\nFS\nof Computer and Emerging Sciences\nKarachi Campus\nAbdulAhad\n22K-4353\nBS(CS)\n42101-1876360-1\nValid till30-June-2026",
+      "classification": {
+        "document_type": "Student ID Card",
+        "extracted_data": {
+          "University Name": "National University of Computer and Emerging Sciences",
+          "Campus": "Karachi Campus",
+          "Student Name": "AbdulAhad",
+          "Student ID": "22K-4353",
+          "Program": "BS(CS)",
+          "National ID": "42101-1876360-1",
+          "Valid Till Date": "30-June-2026"
+        },
+        "field_names_only": [
+          "University Name",
+          "Campus",
+          "Student Name",
+          "Student ID",
+          "Program",
+          "National ID",
+          "Valid Till Date"
+        ]
+      }
+    },
+    {
+      "source_file": "images\\id3.jpg",
+      "file_name": "id3.jpg",
+      "extracted_text": "National University\nFS\nof Computer and Emerging Sciences\nKarachi Campus\nMuhammad ShayanKKan\n22K-5065\nBS(Robo)\n42501-9187348-1\nValid till30-June-2026",
+      "classification": {
+        "document_type": "Student ID Card",
+        "extracted_data": {
+          "Institution Name": "National University of Computer and Emerging Sciences",
+          "Campus": "Karachi Campus",
+          "Student Name": "Muhammad ShayanKKan",
+          "Student ID": "22K-5065",
+          "Program of Study": "BS(Robo)",
+          "CNIC Number": "42501-9187348-1",
+          "Valid Till Date": "30-June-2026"
+        },
+        "field_names_only": [
+          "Institution Name",
+          "Campus",
+          "Student Name",
+          "Student ID",
+          "Program of Study",
+          "CNIC Number",
+          "Valid Till Date"
+        ]
+      }
+    },
+    {
+      "source_file": "images\\id4.jpg",
+      "file_name": "id4.jpg",
+      "extracted_text": "National University\nFS\nof Computer and Emerging Sciences\nKarachi Campus\nUzair Ibrahim\n24K-0867\nBS(CS)\n45305-0448475-5\nValid till30-June-2028",
+      "classification": {
+        "document_type": "Student ID Card",
+        "extracted_data": {
+          "Institution Name": "National University of Computer and Emerging Sciences",
+          "Campus": "Karachi Campus",
+          "Student Name": "Uzair Ibrahim",
+          "Student ID": "24K-0867",
+          "Program": "BS(CS)",
+          "CNIC": "45305-0448475-5",
+          "Valid Till": "30-June-2028"
+        },
+        "field_names_only": [
+          "Institution Name",
+          "Campus",
+          "Student Name",
+          "Student ID",
+          "Program",
+          "CNIC",
+          "Valid Till"
+        ]
+      }
+    },
+    {
+      "source_file": "images\\nic2.jpg",
+      "file_name": "nic2.jpg",
+      "extracted_text": "Under 18 until24.09.2022\n36490\nPAKISTAN\n29.07.2021\nDate of Issue\n42101-9154862-9\nIdentity Number\nM\nGender\nKamal Ahmed Khan\nFather Name\nMusaddiq Kamal Khan\nName\nCountry ofStay\nSaudi Arabia\nNational Identity Card\nDate of Birth\nUGA\n29.07.2031\nDate of Expiry\n24.09.2004\nHolder's Signature\nMusaddiay",
+      "classification": {
+        "error": "LLM classification failed",
+        "details": "'GenerateContentResponse' object has no attribute 'promptFeedback'"
+      }
+    },
+    {
+      "source_file": "images\\nic3.jpg",
+      "file_name": "nic3.jpg",
+      "extracted_text": "PAKISTAN\nNational Identity Card\nSLAMIC REPUBLIC OF PAKISTAN\nName\nAbdul Ahad\nFather Name\nDanish\nGender\nCountry ofStay\nM\nUnited States\nIdentity Number\nDate of Birth\n42101-1876360-1\n06.11.2003\nDate of Issue\nDate of Expiry\n13.12.2021\n13.12.2031\nHolder's Signature",
+      "classification": {
+        "document_type": "Identity Card",
+        "extracted_data": {
+          "Name": "Abdul Ahad",
+          "Father Name": "Danish",
+          "Gender": "M",
+          "Country of Stay": "United States",
+          "Identity Number": "42101-1876360-1",
+          "Date of Birth": "06.11.2003",
+          "Date of Issue": "13.12.2021",
+          "Date of Expiry": "13.12.2031",
+          "Holder's Signature": null
+        },
+        "field_names_only": [
+          "Name",
+          "Father Name",
+          "Gender",
+          "Country of Stay",
+          "Identity Number",
+          "Date of Birth",
+          "Date of Issue",
+          "Date of Expiry",
+          "Holder's Signature"
+        ]
+      }
+    },
+    {
+      "source_file": "images\\nic4.jpg",
+      "file_name": "nic4.jpg",
+      "extracted_text": "PAKISTAN National Identity Card\nSLAC REPUSLIC OF PAKISTAN\nName\nMuhammad Taha\nUnder 18 until 12.02.2023\nFather Name\nGhulam Muhammad\nGender Country of Stay\nM\nPakistan\nIdentity Number\nDate of Birth\n42000-7319542-5\n12.02.2005\nDate of issue\nDate of Expiry\n28.02.2022\n28.02.2032\nHolder s Signature",
+      "classification": {
+        "document_type": "National Identity Card",
+        "extracted_data": {
+          "Name": "Muhammad Taha",
+          "Under 18 until": "12.02.2023",
+          "Father Name": "Ghulam Muhammad",
+          "Gender": "M",
+          "Country of Stay": "Pakistan",
+          "Identity Number": "42000-7319542-5",
+          "Date of Birth": "12.02.2005",
+          "Date of issue": "28.02.2022",
+          "Date of Expiry": "28.02.2032"
+        },
+        "field_names_only": [
+          "Name",
+          "Under 18 until",
+          "Father Name",
+          "Gender",
+          "Country of Stay",
+          "Identity Number",
+          "Date of Birth",
+          "Date of issue",
+          "Date of Expiry",
+          "Holder s Signature"
+        ]
+      }
+    }
+  ]
+}
