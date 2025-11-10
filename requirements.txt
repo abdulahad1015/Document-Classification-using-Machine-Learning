@@ -1,10 +1,12 @@
+# Django Backend
+Django==5.2.8
+djangorestframework==3.16.1
+
 # OCR Dependencies
 # pytesseract==0.3.10  # Replaced with PaddleOCR
 paddleocr==2.7.3
 paddlepaddle==2.6.1  # CPU version (use paddlepaddle-gpu for GPU support)
 Pillow==10.4.0
-
-
 
 # LLM API Client
 google-generativeai==0.8.3
