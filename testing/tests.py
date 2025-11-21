@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
-# from model.api.classifier.slm_api import file_classification_slm
+from model.api.classifier.slm_api import file_classification_slm
 from model.api.classifier.hdbscan_api import file_classification_hdbscan
 from model.api.classifier.knn_api import file_classification_knn
 from model.api.classifier.embeddings_api import file_classification_embeddings
@@ -14,7 +14,7 @@ EXCEL_FILE = r"testing\data_info.xlsx"
 LOG_FILE = r"testing\logs.txt"
 
 def get_options():
-    return ["CNIC", "Driver's License"]
+    return ["CNIC", "Driver's License", "Passport"]
 def log_results(log_message):
     with open(LOG_FILE, "a") as log_file:
         log_file.write(log_message + "\n")
@@ -51,7 +51,7 @@ def process_file(df, classification_function, api_name, options=None):
 
 def SLM_method(df):
     """Process files and evaluate classifications using SLM."""
-    # process_file(df, file_classification_slm, "SLM", options=get_options())
+    process_file(df, file_classification_slm, "SLM", options=get_options())
 
 def HDBSCAN_method(df):
     """Process files and evaluate classifications using HDBSCAN."""
@@ -79,12 +79,12 @@ def evaluate_file_classification():
     if not {"File_name", "Classification"}.issubset(df.columns):
         raise ValueError("The Excel file must contain 'File_name' and 'Classification' columns.")
 
-    # SLM_method(df)
-    HDBSCAN_method(df)
-    KNN_method(df)
-    Embeddings_method(df)
-    OneClassSvm_method(df)
-    IsolationForest_method(df)
+    SLM_method(df)
+    # HDBSCAN_method(df)
+    # KNN_method(df)
+    # Embeddings_method(df)
+    # OneClassSvm_method(df)
+    # IsolationForest_method(df)
 
 if __name__ == "__main__":
     evaluate_file_classification()
