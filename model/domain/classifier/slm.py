@@ -40,7 +40,7 @@ def classify_document(document_data: str, categories: list) -> str:
 
     return result
 
-def fileclassfy(file_path: str, options) -> str:
+def fileclassfy_slm(file_path: str, options) -> str:
     if not options:
         raise ValueError("options must be a non-empty list")
 
@@ -57,4 +57,4 @@ if __name__ == "__main__":
     if not Path(file_path).exists():
         print(f"File not found: {file_path}")
     else:
-        fileclassfy(file_path, options=["ocr"])
+        fileclassfy_slm(file_path, options=["ocr"])

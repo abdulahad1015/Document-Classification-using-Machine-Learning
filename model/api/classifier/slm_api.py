@@ -1,9 +1,9 @@
-from model.domain.classifier.slm import fileclassfy
+from model.domain.classifier.slm import fileclassfy_slm
 
 
-def file_classification(file_path: str, options: list) -> str:
+def file_classification_slm(file_path: str, options: list) -> str:
     """
-    Classify the file at the given path using the fileclassfy function.
+    Classify the file at the given path using the fileclassfy_slm function.
 
     Args:
         file_path (str): The path to the file to be classified.
@@ -12,5 +12,5 @@ def file_classification(file_path: str, options: list) -> str:
     Returns:
         str: The classification result.
     """
-    classification_result = fileclassfy(file_path, options)
+    classification_result = fileclassfy_slm(file_path, options)
     return classification_result
