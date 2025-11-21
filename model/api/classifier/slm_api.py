@@ -1,4 +1,4 @@
-from model.domain.file_classifier import fileclassfy
+from model.domain.classifier.slm import fileclassfy
 
 
 def file_classification(file_path: str, options: list) -> str:
