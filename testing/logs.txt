@@ -5,3 +5,8 @@
 2025-11-21 14:17:49 | API: Embeddings | Accuracy: 0.0000 | Precision: 0.0000 | Recall: 0.0000 | F1 Score: 0.0000
 2025-11-21 14:17:49 | API: One-Class SVM | Accuracy: 0.0000 | Precision: 0.0000 | Recall: 0.0000 | F1 Score: 0.0000
 2025-11-21 14:17:49 | API: Isolation Forest | Accuracy: 0.0000 | Precision: 0.0000 | Recall: 0.0000 | F1 Score: 0.0000
+2025-11-21 14:23:10 | API: HDBSCAN | Accuracy: 1.0000 | Precision: 1.0000 | Recall: 1.0000 | F1 Score: 1.0000
+2025-11-21 14:23:10 | API: KNN | Accuracy: 1.0000 | Precision: 1.0000 | Recall: 1.0000 | F1 Score: 1.0000
+2025-11-21 14:23:10 | API: Embeddings | Accuracy: 0.0000 | Precision: 0.0000 | Recall: 0.0000 | F1 Score: 0.0000
+2025-11-21 14:23:10 | API: One-Class SVM | Accuracy: 0.0000 | Precision: 0.0000 | Recall: 0.0000 | F1 Score: 0.0000
+2025-11-21 14:23:10 | API: Isolation Forest | Accuracy: 0.0000 | Precision: 0.0000 | Recall: 0.0000 | F1 Score: 0.0000
