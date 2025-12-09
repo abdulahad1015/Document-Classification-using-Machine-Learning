@@ -19,3 +19,6 @@ langchain==1.0.5
 # Optional: For PDF support (if processing PDFs instead of images)
 # pdf2image==1.17.0
 # pypdf2==3.0.1
+
+
+langchain==1.0.5

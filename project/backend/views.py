@@ -3,7 +3,7 @@ from rest_framework.response import Response
 from rest_framework.parsers import MultiPartParser, FormParser
 from rest_framework import status
 from .models import FileInfo, ClassificationOption
-from model.api.file_classification_api import file_classification
+from model.api.classifier.slm_api import file_classification_slm
 import os
 
 class FileUploadView(APIView):
@@ -37,7 +37,7 @@ class FileUploadView(APIView):
                     destination.write(chunk)
 
             # Get AI classification suggestion (don't save to DB yet)
-            suggested_classification = file_classification(file_path, options)
+            suggested_classification = file_classification_slm(file_path, options)
             print(f"Suggested classification for {file.name}: {suggested_classification}")
             # Save file info without classification (user will confirm later)
             file_info = FileInfo(
