@@ -1,0 +1,24 @@
+{
+    "raw_text": "National University\nFST\nof Computer and Emerging Sciences\nKarachi Campus\nUzair Ibrahim\n24K-0867\nBS(CS)\n45305-0448475-5\nValid till30-June-2028",
+    "extracted_text": {
+        "University Name": "National University of Computer and Emerging Sciences",
+        "Faculty/Department": "FST",
+        "Campus": "Karachi Campus",
+        "Name": "Uzair Ibrahim",
+        "Student ID": "24K-0867",
+        "Program": "BS(CS)",
+        "National ID": "45305-0448475-5",
+        "Valid Till": "30-June-2028"
+    },
+    "field_names": [
+        "University Name",
+        "Faculty/Department",
+        "Campus",
+        "Name",
+        "Student ID",
+        "Program",
+        "National ID",
+        "Valid Till"
+    ],
+    "identifier": "24K-0867"
+}

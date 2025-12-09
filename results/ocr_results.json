@@ -30,6 +30,23 @@
       "source_file": "images\\nic4.jpg",
       "file_name": "nic4.jpg",
       "extracted_text": "PAKISTAN National Identity Card\nSLAC REPUSLIC OF PAKISTAN\nName\nMuhammad Taha\nUnder 18 until 12.02.2023\nFather Name\nGhulam Muhammad\nGender Country of Stay\nM\nPakistan\nIdentity Number\nDate of Birth\n42000-7319542-5\n12.02.2005\nDate of issue\nDate of Expiry\n28.02.2022\n28.02.2032\nHolder s Signature"
+    },
+    {
+      "raw_text": "National University\nFST\nof Computer and Emerging Sciences\nKarachi Campus\nUzair Ibrahim\n24K-0867\nBS(CS)\n45305-0448475-5\nValid till30-June-2028",
+      "extracted_data": {
+        "document_type": "Student ID Card",
+        "extracted_data": {
+          "University Name": "National University of Computer and Emerging Sciences",
+          "Campus": "Karachi Campus",
+          "Name": "Uzair Ibrahim",
+          "Student ID": "24K-0867",
+          "Program": "BS(CS)",
+          "CNIC": "45305-0448475-5",
+          "Valid Till": "30-June-2028"
+        },
+        "field_names": ["University Name", "Campus", "Name", "Student ID", "Program", "CNIC", "Valid Till"],
+        "identifier": "24K-0867"
+      }
     }
   ]
 }
