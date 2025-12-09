@@ -58,16 +58,6 @@ class LLMClassifier:
         
     
     def classify_text(self, text: str, classification_prompt: str = None) -> Dict[str, Any]:
-        """
-        Send extracted text to Gemini LLM for classification and structured extraction.
-        
-        Args:
-            text: The extracted text to classify
-            classification_prompt: Custom prompt for classification (optional)
-            
-        Returns:
-            Dictionary containing the classified data in JSON format
-        """
         if not text or text.strip() == "":
             return {
                 "document_type": "empty_document",
@@ -81,9 +71,10 @@ class LLMClassifier:
             Identify ALL field names/labels present in the document.
             
             Return the results in JSON format with these fields:
-            - document_type: (e.g., invoice, receipt, contract, letter, form, etc.)
+            - document_type: (e.g., "ID Card", "Passport", etc.)
             - extracted_data: (dictionary of field_name: field_value pairs)
             - field_names_only: (list of just the field names for clustering purposes)
+            - unique_id: (a unique identifier for this document, if present)
             
             Document text:
             """
