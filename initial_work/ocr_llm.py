@@ -121,7 +121,7 @@ class LLMClassifier:
             - document_type: (e.g., "ID Card", "Passport", etc.)
             - classified_data: (dictionary of field_name: field_value pairs)
             - field_names: (list of just the field names for clustering purposes)
-            - identifier: (a unique identifier for this document, if present)
+            - identifier: (name of a key field to identify the document, e.g., "ID Number")
             
             Document text:
             """
